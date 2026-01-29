@@ -90,6 +90,14 @@ border-radius: 37.46px;
 border-width: 3.9px;
 color: #ffffff;
 background-color: #ff4c00;
+ transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;  
+}
+  .nav-button:hover{
+background-color: transparent;
+border: 2px solid #ff4c00;
+
   }
 .nav-button-content{
   font-family: inter;
@@ -153,6 +161,13 @@ word-spacing: 6px;
     margin-left: -10px;
   }
   .active-user-para {
+    font-family: inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 15.61px;
+letter-spacing: -0.08px;
+
     margin-left: 12px;
   }
 
@@ -245,7 +260,11 @@ text-align: center;
 
   /* left-column */
   .left-column {
-    padding-right: 0px;
+    width: 511px;
+height: 446px;
+opacity: 1;
+
+    background-color: #121315;
   }
 
   /* right-column */
@@ -471,6 +490,41 @@ letter-spacing: 0%;
     line-height: 150%;
     letter-spacing: 0%;
   }
+
+
+  /* client-saying */
+  .client-saying{
+    font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 37.46px;
+line-height: 110%;
+letter-spacing: -3%;
+
+  }
+  /* client-para */
+  .client-para{
+    font-family:inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 21.85px;
+letter-spacing: -0.16px;
+text-align: center;
+
+  }
+  /* text-mark-client */
+.text-mark-client{
+    font-family: Playfair Display;
+font-weight: 500;
+font-style: Medium;
+font-size: 37.46px;
+line-height: 110%;
+color: #ff4c00;
+letter-spacing: -3%;
+text-align: center;
+
+  }
   /* card-row */
   .main-card {
     padding-top: 62px;
@@ -614,7 +668,7 @@ letter-spacing: 0%;
     background-color: #0b0c0e;
 
     border: 2px solid #ff4c00;
-    transform: translateY(-2px);
+    transform: translateY(2px);
   }
 
   /* FAQS  */
@@ -845,12 +899,7 @@ letter-spacing: 0%;
 
   /* footer */
   .site-footer {
-  background: radial-gradient(
-      circle at bottom left,
-      rgba(255, 106, 0, 0.12),
-      transparent 45%
-    ),
-    #0b0f14;
+  background:#1e1615;
   padding: 80px 0 40px;
   color: #9ca3af;
   font-size: 14px;
@@ -944,6 +993,9 @@ letter-spacing: 0%;
 font-size:35px;
 
 }  
+.button-card{
+  width: 100%;
+}
 }
 
 @media (max-width:425px) {
@@ -976,6 +1028,7 @@ font-size: 25px;
 }
 .faqs-para{
   text-align: center;
+  margin-bottom: 16px;
 }
  .copy-right{
   text-align: center;
@@ -984,8 +1037,74 @@ font-size: 25px;
   text-align: center;
   font-size: 12px;
  }
+ .faq-item{
+margin-bottom: 30px;
+}
+.card-subhead{
+  font-size: 32px;
+}
+.sec-subhead{
+  font-size: 36px;
+}
+.left-column{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
+/* mark-text-tran */
+.mark-text-tran,.join-para{
+  font-size: 20px;
+  text-align: center;
+}
+}
 
+@media(max-width:991px) {
 
-/* ///// */
+  .seamless-heading{
+    text-align: center;
+    font-size: 30px;
+  }
+  .faqs-heading{
+    text-align: center;
+  }
+  .faqs-para,.join-para,.seamless-para2{
+text-align: center;
+margin-bottom: 14px;
+  }
+.seamless-para2{
+  text-align: center;
+    font-size: 13px;
+}
+  
+}
+.mySwiper{
+  border: 2px solid green;
+}
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+      cursor: grab;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      border: 2px solid red;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+.start-img{
+  width: 20px;
+  height: 20px;
+}
+/* ///// */ 
